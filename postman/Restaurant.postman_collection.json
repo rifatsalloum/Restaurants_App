@@ -1,0 +1,1996 @@
+{
+	"info": {
+		"_postman_id": "cc62c001-c0ea-487c-9ed2-bef97a45ca1b",
+		"name": "Restaurant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31391596"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "me@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "root",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/login",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "me@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "root",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/login",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 15:08:32 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"1|6pKt7BGWk4ho5yE86Oh5AykiH6TURTkA7DDKPddX4d11bbdb\",\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "me1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "me1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "root",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/register",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "me",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "me2@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "root",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/register",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 12:56:59 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"user currectly registered\"\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|7wFzs8fHlp7T9VXBgCHxYQAa7rmdzHuvSVqeK2IUb5eded51",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/logout",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/logout",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 12:56:25 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"logout done\"\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Restaurants",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/restaurant/all",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"restaurant",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/restaurant/all",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"restaurant",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 15:34:34 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"uuid\": \"4399f5bc-7e07-41e0-b85c-047af297c869\",\n            \"name\": \"Mueller Square\",\n            \"cuisine\": \"american\",\n            \"address\": \"39096 McDermott Locks\\nChadborough, FL 30381-0652\",\n            \"email\": \"wquigley@example.com\",\n            \"phone\": \"(715) 201-1269\",\n            \"rate\": 4,\n            \"menu\": [\n                {\n                    \"uuid\": \"4706fe15-004f-4417-b228-0035985ef8ab\",\n                    \"item\": {\n                        \"uuid\": \"15f951f2-85eb-4d9a-8f95-9b10adcf8b03\",\n                        \"name\": \"Cedrick\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"81.17$\"\n                }\n            ]\n        },\n        {\n            \"uuid\": \"240416f2-3ae9-43ba-acd0-033e6cf90dbb\",\n            \"name\": \"Lon Heights\",\n            \"cuisine\": \"chines\",\n            \"address\": \"9440 Gerald Isle\\nNorth Kaylahfort, OH 33043-2577\",\n            \"email\": \"tressa.heaney@example.org\",\n            \"phone\": \"(458) 751-9903\",\n            \"rate\": 2,\n            \"menu\": [\n                {\n                    \"uuid\": \"30c51fb7-3f0f-4103-ba47-79c64811295e\",\n                    \"item\": {\n                        \"uuid\": \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\",\n                        \"name\": \"Violette\",\n                        \"type\": \"sandwich\"\n                    },\n                    \"price\": \"88.88$\"\n                },\n                {\n                    \"uuid\": \"eab40940-fe98-4e06-9507-840efc6d82ea\",\n                    \"item\": {\n                        \"uuid\": \"505157e2-f443-4318-8bd6-c06f42441356\",\n                        \"name\": \"Diamond\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"50.52$\"\n                }\n            ]\n        },\n        {\n            \"uuid\": \"bd8c6ab1-1894-4545-82d9-9bde56656d98\",\n            \"name\": \"Annetta Mount\",\n            \"cuisine\": \"french\",\n            \"address\": \"4471 Yazmin Village\\nDomenictown, IA 05919-9434\",\n            \"email\": \"cathrine00@example.org\",\n            \"phone\": \"248.507.6470\",\n            \"rate\": 1,\n            \"menu\": [\n                {\n                    \"uuid\": \"131d6a91-2c15-4a12-bf46-185626d4dedb\",\n                    \"item\": {\n                        \"uuid\": \"9ab4f386-7d95-4f30-9093-55697c3787d1\",\n                        \"name\": \"Nicola\",\n                        \"type\": \"sandwich\"\n                    },\n                    \"price\": \"2.93$\"\n                }\n            ]\n        },\n        {\n            \"uuid\": \"4f063d5d-0ad8-41c2-9f4d-c8e9c70eb17d\",\n            \"name\": \"Kendra Rue\",\n            \"cuisine\": \"arabic\",\n            \"address\": \"91622 Bailey Crossing Suite 068\\nNorth Bella, NJ 77547\",\n            \"email\": \"ena.johns@example.com\",\n            \"phone\": \"1-276-614-3404\",\n            \"rate\": 0,\n            \"menu\": [\n                {\n                    \"uuid\": \"5cdbef4b-7e3f-49e5-8d00-811cc46de1d0\",\n                    \"item\": {\n                        \"uuid\": \"f94f6b65-97bc-4ccf-9325-d9659199cf74\",\n                        \"name\": \"Porter\",\n                        \"type\": \"meal\"\n                    },\n                    \"price\": \"96.16$\"\n                }\n            ]\n        },\n        {\n            \"uuid\": \"96b62780-93e3-44ae-b09b-ede36a9aaf39\",\n            \"name\": \"Hagenes Loaf\",\n            \"cuisine\": \"french\",\n            \"address\": \"42051 Myrtis Row\\nNorth Cassie, AK 22494-5198\",\n            \"email\": \"wjohnson@example.com\",\n            \"phone\": \"845.585.0785\",\n            \"rate\": 0,\n            \"menu\": [\n                {\n                    \"uuid\": \"3144119e-2d19-4408-9240-1e4df5957873\",\n                    \"item\": {\n                        \"uuid\": \"505157e2-f443-4318-8bd6-c06f42441356\",\n                        \"name\": \"Diamond\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"78.74$\"\n                }\n            ]\n        },\n        {\n            \"uuid\": \"f8e30a8d-9131-46c0-ab7d-0cfd8bdff647\",\n            \"name\": \"Janick Locks\",\n            \"cuisine\": \"chines\",\n            \"address\": \"447 Emard Hill Suite 840\\nWeberville, VT 56452-9607\",\n            \"email\": \"harvey36@example.net\",\n            \"phone\": \"(364) 525-6194\",\n            \"rate\": 3,\n            \"menu\": []\n        },\n        {\n            \"uuid\": \"c6bee9da-1d04-48be-86e0-29ad2bd9f14c\",\n            \"name\": \"Oberbrunner Branch\",\n            \"cuisine\": \"american\",\n            \"address\": \"266 Fidel Villages\\nSantinohaven, AK 14009-0661\",\n            \"email\": \"kiehn.franco@example.net\",\n            \"phone\": \"+14756968428\",\n            \"rate\": 0,\n            \"menu\": []\n        },\n        {\n            \"uuid\": \"f4d4ce81-278f-454c-bedc-13e7ef5f5f31\",\n            \"name\": \"Ludwig Harbors\",\n            \"cuisine\": \"american\",\n            \"address\": \"47452 Purdy Causeway Suite 400\\nLarsonberg, MI 45664-7629\",\n            \"email\": \"schowalter.clare@example.org\",\n            \"phone\": \"1-828-318-1259\",\n            \"rate\": 3,\n            \"menu\": [\n                {\n                    \"uuid\": \"0ab00a9b-9707-4ae5-8b2c-91cdd1506c91\",\n                    \"item\": {\n                        \"uuid\": \"b0832dc2-de69-45f3-af12-c8aee27947cd\",\n                        \"name\": \"Mallory\",\n                        \"type\": \"meal\"\n                    },\n                    \"price\": \"96.92$\"\n                },\n                {\n                    \"uuid\": \"b3158caa-b6ab-4bfc-994d-c7aa28ba3919\",\n                    \"item\": {\n                        \"uuid\": \"683b61cb-5b9c-4e58-9961-0785578e0715\",\n                        \"name\": \"Hobart\",\n                        \"type\": \"meal\"\n                    },\n                    \"price\": \"25.61$\"\n                }\n            ]\n        },\n        {\n            \"uuid\": \"295e44d7-6d90-47d1-ab17-27c46624559b\",\n            \"name\": \"Jenkins Crescent\",\n            \"cuisine\": \"chines\",\n            \"address\": \"968 Sallie Streets\\nHirtheburgh, MO 89306\",\n            \"email\": \"beier.zander@example.org\",\n            \"phone\": \"205-420-6563\",\n            \"rate\": 1,\n            \"menu\": [\n                {\n                    \"uuid\": \"18a2e949-c054-4e1e-b321-dc643c008266\",\n                    \"item\": {\n                        \"uuid\": \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\",\n                        \"name\": \"Dulce\",\n                        \"type\": \"meal\"\n                    },\n                    \"price\": \"2.48$\"\n                },\n                {\n                    \"uuid\": \"248ec77e-3f90-4982-b4a8-4b3ac3986058\",\n                    \"item\": {\n                        \"uuid\": \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\",\n                        \"name\": \"Beryl\",\n                        \"type\": \"sandwich\"\n                    },\n                    \"price\": \"67.65$\"\n                }\n            ]\n        },\n        {\n            \"uuid\": \"0c74ea28-d8c8-4ce9-ace1-8dbcb8368aa9\",\n            \"name\": \"Rowe Extensions\",\n            \"cuisine\": \"arabic\",\n            \"address\": \"2634 Elmore Spur Apt. 191\\nLake Marley, GA 23316-0934\",\n            \"email\": \"ankunding.clint@example.org\",\n            \"phone\": \"+1.551.661.0840\",\n            \"rate\": 0,\n            \"menu\": []\n        }\n    ],\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mueller Square",
+									"type": "text"
+								},
+								{
+									"key": "cuisine",
+									"value": "american",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "39096 McDermott Locks\nChadborough, FL 30381-0652",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/restaurant/search",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"restaurant",
+								"search"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "name",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Mueller Square",
+											"type": "text"
+										},
+										{
+											"key": "cuisine",
+											"value": "american",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "address",
+											"value": "39096 McDermott Locks\nChadborough, FL 30381-0652",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/restaurant/search",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"restaurant",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 15:51:34 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"uuid\": \"4399f5bc-7e07-41e0-b85c-047af297c869\",\n            \"name\": \"Mueller Square\",\n            \"cuisine\": \"american\",\n            \"address\": \"39096 McDermott Locks\\nChadborough, FL 30381-0652\",\n            \"email\": \"wquigley@example.com\",\n            \"phone\": \"(715) 201-1269\",\n            \"rate\": 4,\n            \"menu\": [\n                {\n                    \"uuid\": \"4706fe15-004f-4417-b228-0035985ef8ab\",\n                    \"item\": {\n                        \"uuid\": \"15f951f2-85eb-4d9a-8f95-9b10adcf8b03\",\n                        \"name\": \"Cedrick\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"81.17$\"\n                }\n            ]\n        }\n    ],\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						},
+						{
+							"name": "cuisine",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Mueller Square",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "cuisine",
+											"value": "american",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "39096 McDermott Locks\nChadborough, FL 30381-0652",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/restaurant/search",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"restaurant",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 15:51:54 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"uuid\": \"4399f5bc-7e07-41e0-b85c-047af297c869\",\n            \"name\": \"Mueller Square\",\n            \"cuisine\": \"american\",\n            \"address\": \"39096 McDermott Locks\\nChadborough, FL 30381-0652\",\n            \"email\": \"wquigley@example.com\",\n            \"phone\": \"(715) 201-1269\",\n            \"rate\": 4,\n            \"menu\": [\n                {\n                    \"uuid\": \"4706fe15-004f-4417-b228-0035985ef8ab\",\n                    \"item\": {\n                        \"uuid\": \"15f951f2-85eb-4d9a-8f95-9b10adcf8b03\",\n                        \"name\": \"Cedrick\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"81.17$\"\n                }\n            ]\n        },\n        {\n            \"uuid\": \"c6bee9da-1d04-48be-86e0-29ad2bd9f14c\",\n            \"name\": \"Oberbrunner Branch\",\n            \"cuisine\": \"american\",\n            \"address\": \"266 Fidel Villages\\nSantinohaven, AK 14009-0661\",\n            \"email\": \"kiehn.franco@example.net\",\n            \"phone\": \"+14756968428\",\n            \"rate\": 0,\n            \"menu\": []\n        },\n        {\n            \"uuid\": \"f4d4ce81-278f-454c-bedc-13e7ef5f5f31\",\n            \"name\": \"Ludwig Harbors\",\n            \"cuisine\": \"american\",\n            \"address\": \"47452 Purdy Causeway Suite 400\\nLarsonberg, MI 45664-7629\",\n            \"email\": \"schowalter.clare@example.org\",\n            \"phone\": \"1-828-318-1259\",\n            \"rate\": 3,\n            \"menu\": [\n                {\n                    \"uuid\": \"0ab00a9b-9707-4ae5-8b2c-91cdd1506c91\",\n                    \"item\": {\n                        \"uuid\": \"b0832dc2-de69-45f3-af12-c8aee27947cd\",\n                        \"name\": \"Mallory\",\n                        \"type\": \"meal\"\n                    },\n                    \"price\": \"96.92$\"\n                },\n                {\n                    \"uuid\": \"b3158caa-b6ab-4bfc-994d-c7aa28ba3919\",\n                    \"item\": {\n                        \"uuid\": \"683b61cb-5b9c-4e58-9961-0785578e0715\",\n                        \"name\": \"Hobart\",\n                        \"type\": \"meal\"\n                    },\n                    \"price\": \"25.61$\"\n                }\n            ]\n        }\n    ],\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						},
+						{
+							"name": "address",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Mueller Square",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "cuisine",
+											"value": "american",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "address",
+											"value": "39096 McDermott Locks\nChadborough, FL 30381-0652",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/restaurant/search",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"restaurant",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 15:52:11 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"uuid\": \"4399f5bc-7e07-41e0-b85c-047af297c869\",\n            \"name\": \"Mueller Square\",\n            \"cuisine\": \"american\",\n            \"address\": \"39096 McDermott Locks\\nChadborough, FL 30381-0652\",\n            \"email\": \"wquigley@example.com\",\n            \"phone\": \"(715) 201-1269\",\n            \"rate\": 4,\n            \"menu\": [\n                {\n                    \"uuid\": \"4706fe15-004f-4417-b228-0035985ef8ab\",\n                    \"item\": {\n                        \"uuid\": \"15f951f2-85eb-4d9a-8f95-9b10adcf8b03\",\n                        \"name\": \"Cedrick\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"81.17$\"\n                }\n            ]\n        }\n    ],\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						},
+						{
+							"name": "cuisine & adress",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Mueller Square",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "cuisine",
+											"value": "american",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "39096 McDermott Locks\nChadborough, FL 30381-0652",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/restaurant/search",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"restaurant",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 15:52:23 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"uuid\": \"4399f5bc-7e07-41e0-b85c-047af297c869\",\n            \"name\": \"Mueller Square\",\n            \"cuisine\": \"american\",\n            \"address\": \"39096 McDermott Locks\\nChadborough, FL 30381-0652\",\n            \"email\": \"wquigley@example.com\",\n            \"phone\": \"(715) 201-1269\",\n            \"rate\": 4,\n            \"menu\": [\n                {\n                    \"uuid\": \"4706fe15-004f-4417-b228-0035985ef8ab\",\n                    \"item\": {\n                        \"uuid\": \"15f951f2-85eb-4d9a-8f95-9b10adcf8b03\",\n                        \"name\": \"Cedrick\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"81.17$\"\n                }\n            ]\n        }\n    ],\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "rate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6pKt7BGWk4ho5yE86Oh5AykiH6TURTkA7DDKPddX4d11bbdb",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "restaurant_uuid",
+									"value": "240416f2-3ae9-43ba-acd0-033e6cf90dbb",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "beauty",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/restaurant/rate",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"restaurant",
+								"rate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "restaurant_uuid",
+											"value": "f8e30a8d-9131-46c0-ab7d-0cfd8bdff647",
+											"type": "text"
+										},
+										{
+											"key": "rate",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "comment",
+											"value": "beauty",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/restaurant/rate",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"restaurant",
+										"rate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:07:29 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"The Rate Updated Correctly\"\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						},
+						{
+							"name": "add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "restaurant_uuid",
+											"value": "240416f2-3ae9-43ba-acd0-033e6cf90dbb",
+											"type": "text"
+										},
+										{
+											"key": "rate",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "comment",
+											"value": "beauty",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/restaurant/rate",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"restaurant",
+										"rate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:08:25 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"rating added correctly\"\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6pKt7BGWk4ho5yE86Oh5AykiH6TURTkA7DDKPddX4d11bbdb",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/order/all",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"order",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/order/all",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"order",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 17:41:01 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"uuid\": \"2f19c862-a411-49dd-936c-8f2e57491e81\",\n            \"type\": \"delivery\",\n            \"status\": \"taked\",\n            \"items\": [],\n            \"overall_price\": \"0$\",\n            \"price_change\": false\n        },\n        {\n            \"uuid\": \"454d8b9c-0276-4ac5-93a6-189d9b752aef\",\n            \"type\": \"delivery\",\n            \"status\": \"not_taked\",\n            \"items\": [],\n            \"overall_price\": \"0$\",\n            \"price_change\": false\n        },\n        {\n            \"uuid\": \"e9826544-27e2-4810-8948-1659e2c4a990\",\n            \"type\": \"pickup\",\n            \"status\": \"taked\",\n            \"items\": [],\n            \"overall_price\": \"0$\",\n            \"price_change\": false\n        },\n        {\n            \"uuid\": \"df78855b-9a28-49bb-9bad-1331f741515b\",\n            \"type\": \"pickup\",\n            \"status\": \"not_taked\",\n            \"items\": [],\n            \"overall_price\": \"0$\",\n            \"price_change\": false\n        },\n        {\n            \"uuid\": \"d55dccbe-ff41-42e4-87f1-df7ed35ed4d4\",\n            \"type\": \"delivery\",\n            \"status\": \"not_taked\",\n            \"items\": [\n                {\n                    \"uuid\": \"2975b785-6aff-47e5-9646-dce1acc6ebce\",\n                    \"ordered_item\": {\n                        \"uuid\": \"30c51fb7-3f0f-4103-ba47-79c64811295e\",\n                        \"item\": {\n                            \"uuid\": \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\",\n                            \"name\": \"Violette\",\n                            \"type\": \"sandwich\"\n                        },\n                        \"price\": \"50.52$\"\n                    },\n                    \"number\": 3\n                },\n                {\n                    \"uuid\": \"6712b775-f760-44f3-8997-17d3b44fbc77\",\n                    \"ordered_item\": {\n                        \"uuid\": \"18a2e949-c054-4e1e-b321-dc643c008266\",\n                        \"item\": {\n                            \"uuid\": \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\",\n                            \"name\": \"Dulce\",\n                            \"type\": \"meal\"\n                        },\n                        \"price\": \"50.52$\"\n                    },\n                    \"number\": 1\n                },\n                {\n                    \"uuid\": \"6b3472ed-3f41-4f6c-9dfb-0004ac18ac43\",\n                    \"ordered_item\": {\n                        \"uuid\": \"248ec77e-3f90-4982-b4a8-4b3ac3986058\",\n                        \"item\": {\n                            \"uuid\": \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\",\n                            \"name\": \"Beryl\",\n                            \"type\": \"sandwich\"\n                        },\n                        \"price\": \"50.52$\"\n                    },\n                    \"number\": 3\n                },\n                {\n                    \"uuid\": \"6492c0b1-2899-4435-a2f6-550e1f534c12\",\n                    \"ordered_item\": {\n                        \"uuid\": \"eab40940-fe98-4e06-9507-840efc6d82ea\",\n                        \"item\": {\n                            \"uuid\": \"505157e2-f443-4318-8bd6-c06f42441356\",\n                            \"name\": \"Diamond\",\n                            \"type\": \"drink\"\n                        },\n                        \"price\": \"50.52$\"\n                    },\n                    \"number\": 2\n                }\n            ],\n            \"overall_price\": \"573.11$\",\n            \"price_change\": false\n        }\n    ],\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						},
+						{
+							"name": "withpricechange",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/order/all",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"order",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 19:00:32 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"uuid\": \"2f19c862-a411-49dd-936c-8f2e57491e81\",\n            \"type\": \"delivery\",\n            \"status\": \"taked\",\n            \"items\": [],\n            \"overall_price\": \"0$\",\n            \"price_change\": false\n        },\n        {\n            \"uuid\": \"454d8b9c-0276-4ac5-93a6-189d9b752aef\",\n            \"type\": \"delivery\",\n            \"status\": \"taked\",\n            \"items\": [],\n            \"overall_price\": \"0$\",\n            \"price_change\": false\n        },\n        {\n            \"uuid\": \"e9826544-27e2-4810-8948-1659e2c4a990\",\n            \"type\": \"pickup\",\n            \"status\": \"taked\",\n            \"items\": [],\n            \"overall_price\": \"0$\",\n            \"price_change\": false\n        },\n        {\n            \"uuid\": \"df78855b-9a28-49bb-9bad-1331f741515b\",\n            \"type\": \"pickup\",\n            \"status\": \"not_taked\",\n            \"items\": [],\n            \"overall_price\": \"0$\",\n            \"price_change\": false\n        },\n        {\n            \"uuid\": \"d55dccbe-ff41-42e4-87f1-df7ed35ed4d4\",\n            \"type\": \"delivery\",\n            \"status\": \"not_taked\",\n            \"items\": [\n                {\n                    \"uuid\": \"2975b785-6aff-47e5-9646-dce1acc6ebce\",\n                    \"ordered_item\": {\n                        \"uuid\": \"30c51fb7-3f0f-4103-ba47-79c64811295e\",\n                        \"item\": {\n                            \"uuid\": \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\",\n                            \"name\": \"Violette\",\n                            \"type\": \"sandwich\"\n                        },\n                        \"price\": \"50.52$\"\n                    },\n                    \"number\": 3\n                },\n                {\n                    \"uuid\": \"6712b775-f760-44f3-8997-17d3b44fbc77\",\n                    \"ordered_item\": {\n                        \"uuid\": \"18a2e949-c054-4e1e-b321-dc643c008266\",\n                        \"item\": {\n                            \"uuid\": \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\",\n                            \"name\": \"Dulce\",\n                            \"type\": \"meal\"\n                        },\n                        \"price\": \"50.52$\"\n                    },\n                    \"number\": 1\n                },\n                {\n                    \"uuid\": \"6b3472ed-3f41-4f6c-9dfb-0004ac18ac43\",\n                    \"ordered_item\": {\n                        \"uuid\": \"248ec77e-3f90-4982-b4a8-4b3ac3986058\",\n                        \"item\": {\n                            \"uuid\": \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\",\n                            \"name\": \"Beryl\",\n                            \"type\": \"sandwich\"\n                        },\n                        \"price\": \"50.52$\"\n                    },\n                    \"number\": 3\n                },\n                {\n                    \"uuid\": \"6492c0b1-2899-4435-a2f6-550e1f534c12\",\n                    \"ordered_item\": {\n                        \"uuid\": \"eab40940-fe98-4e06-9507-840efc6d82ea\",\n                        \"item\": {\n                            \"uuid\": \"505157e2-f443-4318-8bd6-c06f42441356\",\n                            \"name\": \"Diamond\",\n                            \"type\": \"drink\"\n                        },\n                        \"price\": \"50.52$\"\n                    },\n                    \"number\": 2\n                }\n            ],\n            \"overall_price\": \"573.11$\",\n            \"price_change\": true\n        }\n    ],\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "place",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6pKt7BGWk4ho5yE86Oh5AykiH6TURTkA7DDKPddX4d11bbdb",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\" : \"delivery\",\n    \"data\":{\n        \"240416f2-3ae9-43ba-acd0-033e6cf90dbb\" : {\n            \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\" : 3,\n            \"505157e2-f443-4318-8bd6-c06f42441356\" : 2\n        },\n        \"295e44d7-6d90-47d1-ab17-27c46624559b\" : {\n            \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\" : 1,\n            \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\" :3\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/order/place",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"order",
+								"place"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "place",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\" : \"delivery\",\n    \"data\":{\n        \"240416f2-3ae9-43ba-acd0-033e6cf90dbb\" : {\n            \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\" : 3,\n            \"505157e2-f443-4318-8bd6-c06f42441356\" : 2\n        },\n        \"295e44d7-6d90-47d1-ab17-27c46624559b\" : {\n            \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\" : 1,\n            \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\" :3\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{server}}/order/place",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"order",
+										"place"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:55:20 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"order added correctly\"\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "changeStatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6pKt7BGWk4ho5yE86Oh5AykiH6TURTkA7DDKPddX4d11bbdb",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_uuid",
+									"value": "d55dccbe-ff41-42e4-87f1-df7ed35ed4d4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/order/change/status",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"order",
+								"change",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "changeStatus",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "order_uuid",
+											"value": "454d8b9c-0276-4ac5-93a6-189d9b752aef",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/order/change/status",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"order",
+										"change",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 17:44:33 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"update done\"\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "newPrices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6pKt7BGWk4ho5yE86Oh5AykiH6TURTkA7DDKPddX4d11bbdb",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_uuid",
+									"value": "d55dccbe-ff41-42e4-87f1-df7ed35ed4d4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/order/new/prices",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"order",
+								"new",
+								"prices"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "newPrices",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "order_uuid",
+											"value": "d55dccbe-ff41-42e4-87f1-df7ed35ed4d4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/order/new/prices",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"order",
+										"new",
+										"prices"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 18:02:12 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"uuid\": \"d55dccbe-ff41-42e4-87f1-df7ed35ed4d4\",\n        \"type\": \"delivery\",\n        \"status\": \"not_taked\",\n        \"items\": [\n            {\n                \"uuid\": \"2975b785-6aff-47e5-9646-dce1acc6ebce\",\n                \"ordered_item\": {\n                    \"uuid\": \"30c51fb7-3f0f-4103-ba47-79c64811295e\",\n                    \"item\": {\n                        \"uuid\": \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\",\n                        \"name\": \"Violette\",\n                        \"type\": \"sandwich\"\n                    },\n                    \"price\": \"88.88$\"\n                },\n                \"number\": 3\n            },\n            {\n                \"uuid\": \"6712b775-f760-44f3-8997-17d3b44fbc77\",\n                \"ordered_item\": {\n                    \"uuid\": \"18a2e949-c054-4e1e-b321-dc643c008266\",\n                    \"item\": {\n                        \"uuid\": \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\",\n                        \"name\": \"Dulce\",\n                        \"type\": \"meal\"\n                    },\n                    \"price\": \"2.48$\"\n                },\n                \"number\": 1\n            },\n            {\n                \"uuid\": \"6b3472ed-3f41-4f6c-9dfb-0004ac18ac43\",\n                \"ordered_item\": {\n                    \"uuid\": \"248ec77e-3f90-4982-b4a8-4b3ac3986058\",\n                    \"item\": {\n                        \"uuid\": \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\",\n                        \"name\": \"Beryl\",\n                        \"type\": \"sandwich\"\n                    },\n                    \"price\": \"67.65$\"\n                },\n                \"number\": 3\n            },\n            {\n                \"uuid\": \"6492c0b1-2899-4435-a2f6-550e1f534c12\",\n                \"ordered_item\": {\n                    \"uuid\": \"eab40940-fe98-4e06-9507-840efc6d82ea\",\n                    \"item\": {\n                        \"uuid\": \"505157e2-f443-4318-8bd6-c06f42441356\",\n                        \"name\": \"Diamond\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"50.52$\"\n                },\n                \"number\": 2\n            }\n        ],\n        \"overall_price\": \"573.11$\",\n        \"price_change\": false\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						},
+						{
+							"name": "withPriceChanges",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "order_uuid",
+											"value": "d55dccbe-ff41-42e4-87f1-df7ed35ed4d4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/order/new/prices",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"order",
+										"new",
+										"prices"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 19:03:30 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"uuid\": \"d55dccbe-ff41-42e4-87f1-df7ed35ed4d4\",\n        \"type\": \"delivery\",\n        \"status\": \"not_taked\",\n        \"items\": [\n            {\n                \"uuid\": \"2975b785-6aff-47e5-9646-dce1acc6ebce\",\n                \"ordered_item\": {\n                    \"uuid\": \"30c51fb7-3f0f-4103-ba47-79c64811295e\",\n                    \"item\": {\n                        \"uuid\": \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\",\n                        \"name\": \"Violette\",\n                        \"type\": \"sandwich\"\n                    },\n                    \"price\": \"81.88$\"\n                },\n                \"number\": 3\n            },\n            {\n                \"uuid\": \"6712b775-f760-44f3-8997-17d3b44fbc77\",\n                \"ordered_item\": {\n                    \"uuid\": \"18a2e949-c054-4e1e-b321-dc643c008266\",\n                    \"item\": {\n                        \"uuid\": \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\",\n                        \"name\": \"Dulce\",\n                        \"type\": \"meal\"\n                    },\n                    \"price\": \"2.48$\"\n                },\n                \"number\": 1\n            },\n            {\n                \"uuid\": \"6b3472ed-3f41-4f6c-9dfb-0004ac18ac43\",\n                \"ordered_item\": {\n                    \"uuid\": \"248ec77e-3f90-4982-b4a8-4b3ac3986058\",\n                    \"item\": {\n                        \"uuid\": \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\",\n                        \"name\": \"Beryl\",\n                        \"type\": \"sandwich\"\n                    },\n                    \"price\": \"67.65$\"\n                },\n                \"number\": 3\n            },\n            {\n                \"uuid\": \"6492c0b1-2899-4435-a2f6-550e1f534c12\",\n                \"ordered_item\": {\n                    \"uuid\": \"eab40940-fe98-4e06-9507-840efc6d82ea\",\n                    \"item\": {\n                        \"uuid\": \"505157e2-f443-4318-8bd6-c06f42441356\",\n                        \"name\": \"Diamond\",\n                        \"type\": \"drink\"\n                    },\n                    \"price\": \"50.52$\"\n                },\n                \"number\": 2\n            }\n        ],\n        \"overall_price\": \"552.11$\",\n        \"price_change\": false\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "reorder",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6pKt7BGWk4ho5yE86Oh5AykiH6TURTkA7DDKPddX4d11bbdb",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_uuid\" : \"1885476e-379e-462d-8e7e-2a8b7346c43c\",\n    \"type\" : \"delivery\",\n    \"data\":{\n        \"240416f2-3ae9-43ba-acd0-033e6cf90dbb\" : {\n            \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\" : 3,\n            \"505157e2-f443-4318-8bd6-c06f42441356\" : 2\n        },\n        \"295e44d7-6d90-47d1-ab17-27c46624559b\" : {\n            \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\" : 1,\n            \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\" :3\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/reorder",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"reorder"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "reorder",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order_uuid\" : \"d55dccbe-ff41-42e4-87f1-df7ed35ed4d4\",\n    \"type\" : \"delivery\",\n    \"data\":{\n        \"240416f2-3ae9-43ba-acd0-033e6cf90dbb\" : {\n            \"f6b1527f-6bb2-4d6c-9d8a-7055b3462f75\" : 3,\n            \"505157e2-f443-4318-8bd6-c06f42441356\" : 2\n        },\n        \"295e44d7-6d90-47d1-ab17-27c46624559b\" : {\n            \"03a82e0c-8dfb-4e51-a538-20dedf20bddb\" : 1,\n            \"dfab258a-28b9-4e28-88bd-5f1b358c0ebc\" :3\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{server}}/reorder",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"reorder"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 19:12:56 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"reorderation done\"\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6pKt7BGWk4ho5yE86Oh5AykiH6TURTkA7DDKPddX4d11bbdb",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_uuid",
+									"value": "1cbba2ec-55df-4101-bb0a-ece1e257bc50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/order/delete",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"order",
+								"delete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "order_uuid",
+											"value": "d55dccbe-ff41-42e4-87f1-df7ed35ed4d4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/order/delete",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"order",
+										"delete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.25.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 19:17:58 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"deletion done\"\n    },\n    \"status\": true,\n    \"error\": null,\n    \"statusCode\": 200\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "restaurant.test/api",
+			"type": "string"
+		}
+	]
+}
